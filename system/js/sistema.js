@@ -17,17 +17,18 @@ botao_padrao.forEach(botao => {
 		
 		if(botao.classList.contains("btn_inicial")){
 			//alert("inicial");
-			window.location.href = "/index.html";
+			window.location.href = "/Beauty_salao/index.html";
 		}
 		else if(botao.classList.contains("btn_agenda")){
 			//alert("agenda");
-			window.location.href = "/system/html/agenda.html";
+			window.location.href = "/Beauty_salao/system/html/agenda.html";
 		}
 		else if(botao.classList.contains("btn_resumo")){
 			//alert("resumo");
-			window.location.href = "/system/html/resumo.html";
+			window.location.href = "/Beauty_salao/system/html/resumo.html";
 		}
 	});
 });
+
 
 //________________ Chamadas ________________
