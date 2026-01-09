@@ -44,3 +44,5 @@ botao_padrao.forEach(botao => {
 
 
 //________________ Chamadas ________________
+
+console.log(window.location.pathname);
