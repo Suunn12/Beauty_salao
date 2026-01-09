@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Beauty | Agenda</title>
+		<link rel="stylesheet" href="../css/estilos.css">
+	</head>
+	
+	<body class="corpo">
+		<!-- Cabecalho -->
+		<header class="cabecalho">
+			<!-- Caixa de titulos -->
+			<div class="caixa_titulos">
+				<h2 class="titulo">M Beauty</h2>
+				<p class="subtitulo">@moniquemiranda.studio</p>
+				<h2 class="titulo" style="margin:auto; font-size: 1.75rem;"> ⭐ Agenda ⭐ </h2>
+			</div>
+			
+		</header>
+		
+		<!-- Conteudo -->
+		<div class="conteudo">
+			<!-- Caixa de menus -->
+			<div class="caixa_menu">
+				<input type="button" class="btn_padrao btn_inicial" id="inicial" value="Inicial">
+				<input type="button" class="btn_padrao btn_agenda" id="agenda" value="Agenda">
+				<input type="button" class="btn_padrao btn_resumo" id="resumo" value="Resumo">
+			</div>
+			
+			<!-- Caixa do formulário -->
+			<div class="caixa_formulario">
+				<!-- Nome -->
+				<div class="formulario_elementos">
+					<label for="agenda_nome" class="form_info" style="margin-top: 1dvh;">Um novo cadastro ✨</label>
+					<input type="text" id="agenda_nome" class="caixa_texto" placeholder="Digite o nome">
+					</select>
+				</div>
+
+				<!-- Lista de Nomes -->
+				<div class="formulario_elementos">
+					<label for="agenda_nome_lista" class="form_info">Para clientes ❤️</label>
+					<select class="caixa_texto" id="agenda_nome_lista">
+						<option value="vazio">Selecione ⚙️</option>
+					</select>
+				</div>
+	
+				<!-- Serviços -->
+				<div class="formulario_elementos">
+					<label for="agenda_servico" class="form_info">Procedimentos 💅</label>
+					<select name="agenda_sevico" id="agenda_sevico" class="caixa_texto">
+						<option value="vazio">Selecione ⚙️</option>
+						<option value="banho_de_gel">Banho de Gel</option>
+						<option value="blindagem">Blindagem</option>
+						<option value="cilios">Cílios</option>
+						<option value="depilacao">Depilação</option>
+						<option value="design">Design</option>
+						<option value="design_c_henna">Design com Henna</option>
+						<option value="gel_na_tips">Gel na Tips</option>
+						<option value="manicure">Manicure</option>
+						<option value="manicure_e_pedicure">Manicure e Pedicure</option>
+						<option value="pedicure">Pedicure</option>
+						<option value="posticas">Postiças</option>
+						<option value="spa_dos_pes">Spa dos Pés</option>
+					</select>
+				</div>
+
+				<!-- Data -->
+				<div class="formulario_elementos">
+					<label for="agenda_data" class="form_info">Data para realizar 📅</label>
+					<input type="date" id="agenda_data" class="caixa_texto">
+				</div>
+	
+				<!-- Hora -->
+				<div class="formulario_elementos">
+					<label for="agenda_hora" class="form_info">Hora do início🕗</label>
+					<input type="time" id="agenda_hora" class="caixa_texto">
+				</div>
+
+				<!-- Pagamentos -->
+				<div class="formulario_elementos">
+					<label for="agenda_pagamentos" class="form_info">Forma de pagamento 💲</label>
+					<select class="caixa_texto" id="agenda_pagamento">
+						<option value="vazio">Selecione ⚙️</option>
+						<option value="credito">Crédito 💳</option>
+						<option value="debito">Débito 💳</option>
+						<option value="dinheiro">Dinheiro 💸</option>
+						<option value="pix">Pix 💸</option>
+						<option value="outro">Outro ❗</option>
+					</select>
+
+					<!-- Parcelas -->
+					<div class="formulario_elementos parcelas">
+						<label for="agenda_parcelas" class="form_info">Parcelar em</label>
+						<select class="caixa_texto" id="agenda_parcela">
+							<option value="1x">1x ✔️</option>
+							<option value="2x">2x ✔️</option>
+							<option value="3x">3x ❗</option>
+							<option value="4x">4x ❗</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Texto Dica -->
+				<div class="formulario_elementos">
+					<p class="subtitulo" style="margin:auto;">*Dica: altere somente o precedimento para agendar mais serviços por cliente.</p>
+				</div>
+
+				<!-- Texto status -->
+				<div class="formulario_elementos">
+					<p class="subtitulo" id="formulario_texto_auxi" style="margin:auto;"></p>
+				</div>
+
+				<!-- Texto Subtotal -->
+				<div class="formulario_elementos">
+					<p class="subtitulo" id="formulario_texto_subtotal" style="margin:auto;"></p>
+				</div>
+
+				<!-- Botao Agendar -->
+				<div class="formulario_elementos">
+					<input type="button" class="btn_padrao btn_agendar" id="agendar" value="Agendar" style="margin:auto; margin-bottom: 3dvh; width: 50%;">
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Rodape -->
+		<footer class="rodape">
+			<p class="subtitulo" id="rodape_conexao">© Sunny Rabbit</p>
+		</footer>
+		
+	</body>
+	
+	<!-- SDK do Supabase -->
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	
+	<!-- Script base -->
+	<script src="../js/sistema.js"></script>
+	<script src="../js/agenda.js"></script>
+	
+</html>
