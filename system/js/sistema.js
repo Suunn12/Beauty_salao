@@ -14,7 +14,7 @@ botao_padrao.forEach(botao => {
 		botao.classList.remove("abrir_botao");
 		
 		const caminhoBase = window.location.pathname.includes("/Beauty_salao/")
-			? "/Beauty_salao"
+			? "/Beauty_salao/"
 			: "";
 
 		if(botao.classList.contains("btn_inicial")){
@@ -39,6 +39,7 @@ botao_padrao.forEach(botao => {
 	});
 
 });
+
 
 
 
