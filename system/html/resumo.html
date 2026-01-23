@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Beauty | Resumo</title>
+		<link rel="stylesheet" href="../css/estilos.css">
+
+		<!-- SDK do Supabase -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+		<!-- SDK do ChartJs -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+	
+	<body class="corpo">
+		<!-- Cabecalho -->
+		<header class="cabecalho">
+			<!-- Caixa de titulos -->
+			<div class="caixa_titulos">
+				<h2 class="titulo">M Beauty</h2>
+				<p class="subtitulo">@moniquemiranda.studio</p>
+				<h2 class="titulo" style="margin:auto; font-size: 1.75rem;"> ⭐ Resumo ⭐ </h2>
+			</div>
+			
+		</header>
+		
+		<!-- Conteudo -->
+		<div class="conteudo">
+			<!-- Caixa de menus -->
+			<div class="caixa_menu">
+				<input type="button" class="btn_padrao btn_inicial" id="inicial" value="Inicial">
+				<input type="button" class="btn_padrao btn_agenda" id="agenda" value="Agenda">
+				<input type="button" class="btn_padrao btn_resumo" id="resumo" value="Resumo">
+			</div>
+			
+			<!-- Titulo sobre os conteudos -->
+			<h2 class="titulo" style="font-size: 1.75rem; text-align: center; margin-top: 1.5dvh;">Confira o movimento do seu negócio.</h2>
+
+			<!-- Caixa de menus -->
+			<div class="caixa_menu_metricas">
+				<p class="subtitulo">Pesquise por ano</p>
+				<select class="caixa_texto" id="buscar_por_ano">
+					<option value="vazio">Selecione ⚙️</option>
+				</select>
+			</div>
+
+			<!-- Caixa de graficos -->
+			<div class="caixa_graficos">
+				<canvas id="graf_mov_por_mes"></canvas>
+			</div>
+
+			<!-- Titulo sobre os conteudos -->
+			<h2 class="titulo" style="font-size: 1.75rem; text-align: center; margin-top: 1.5dvh;">Em outra pespectiva.✨</h2>
+
+			<div class="caixa_tabela">
+				<table class="tabela">
+					<thead>
+						<tr>
+							<th class="tabela_titulo">Nome - Serviço - Data - Hora - Valor</th>
+						</tr>
+					</thead>
+					<tbody id="tabela_corpo">
+						<tr>
+							<td class="tabela_linha tabela_impar">Selecione algum <h5>ano</h5> para analisar.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		
+		<!-- Rodape -->
+		<footer class="rodape">
+			<p class="subtitulo" id="rodape_conexao">© Sunny Rabbit</p>
+		</footer>
+		
+	</body>
+	
+	<!-- Script base -->
+	<script src="../js/sistema.js"></script>
+	<script src="../js/resumo.js"></script>
+	
+</html>
